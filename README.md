@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# Overview
 
-You can use the [editor on GitHub](https://github.com/4enablers/4enablers.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+For more details, see https://jekyllrb.com/docs/
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Getting started
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Install all [Prerequisites](https://jekyllrb.com/docs/installation/).
+* Install the jekyll and bundler gems
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+gem install jekyll bundler
+bundle add webrick
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+* Build the site and make it available on a local server.
 
-### Jekyll Themes
+```bash
+bundle exec jekyll serve --incremental
+```
+	
+* Browse to http://localhost:4000
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/4enablers/4enablers.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Install the theme
 
-### Support or Contact
+Search for the [Jekyll theme on RubyGems](https://rubygems.org/search?utf8=%E2%9C%93&query=jekyll-theme)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* Add the theme gem:
+
+```bash
+bundle add jekyll-theme-hacker
+```
+
+* Update _config.yml file to use the new theme:
+
+```bash
+theme: jekyll-theme-minimal
+```
+
+* Build and run your site
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
